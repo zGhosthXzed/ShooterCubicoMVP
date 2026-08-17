@@ -31,13 +31,14 @@ func _unhandled_input(event):
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		
+# --- NUEVO CÓDIGO DE DISPARO ---
 	if Input.is_action_just_pressed("disparar"):
-		# Si el láser está chocando con algo en este momento...
 		if raycast.is_colliding():
-			# Obtenemos qué es exactamente ese "algo"
 			var objetivo = raycast.get_collider()
-			# Por ahora, solo imprimimos su nombre en la consola para saber que funciona
-			print("¡PUM! Le diste a: ", objetivo.name)
+			
+			# Comprobamos si el objeto al que le disparamos tiene la función "recibir_dano"
+			if objetivo.has_method("recibir_dano"):
+				objetivo.recibir_dano() # ¡Le decimos que reciba el daño!
 
 func _physics_process(delta):
 	# Aplicamos la gravedad si no estamos tocando el suelo

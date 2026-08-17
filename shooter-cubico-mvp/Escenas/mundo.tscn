@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bmogfkq7qtu85"]
 
 [ext_resource type="PackedScene" uid="uid://d2lumhun47teu" path="res://Escenas/jugador.tscn" id="1_wxucn"]
+[ext_resource type="PackedScene" uid="uid://clf40yj03ql0d" path="res://Escenas/blanco.tscn" id="2_5sfon"]
 
 [node name="Node3D" type="Node3D" unique_id=602859493]
 
@@ -11,3 +12,21 @@ size = Vector3(20, 1, 20)
 
 [node name="Jugador" parent="." unique_id=1130455222 instance=ExtResource("1_wxucn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.51991224, 2.8169825, 0.08268052)
+
+[node name="Blanco" parent="." unique_id=368395312 instance=ExtResource("2_5sfon")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3939924, 2.4363441, 7.257825)
+
+[node name="Blanco2" parent="." unique_id=773593526 instance=ExtResource("2_5sfon")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.423131, 2.4363441, 4.542611)
+
+[node name="Blanco3" parent="." unique_id=1650056090 instance=ExtResource("2_5sfon")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.450095, 2.4363446, 2.8065624)
+
+[node name="Blanco4" parent="." unique_id=603289914 instance=ExtResource("2_5sfon")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0530176, 2.4363446, -5.914731)
+
+[node name="Blanco5" parent="." unique_id=1594149415 instance=ExtResource("2_5sfon")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8738623, 2.4363441, -1.4511621)
+
+[node name="Blanco6" parent="." unique_id=423176065 instance=ExtResource("2_5sfon")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7388706, 2.4363437, 7.7643986)

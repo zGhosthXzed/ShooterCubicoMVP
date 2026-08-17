@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://clf40yj03ql0d"]
+
+[ext_resource type="Script" uid="uid://4ge4c56uore4" path="res://Escenas/blanco.gd" id="1_ri1ou"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbyeo"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cbyeo"]
+
+[node name="Blanco" type="StaticBody3D" unique_id=368395312]
+script = ExtResource("1_ri1ou")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=457059462]
+material = SubResource("StandardMaterial3D_cbyeo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2061702503]
+shape = SubResource("BoxShape3D_cbyeo")
