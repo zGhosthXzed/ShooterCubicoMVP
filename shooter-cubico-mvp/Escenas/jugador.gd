@@ -10,6 +10,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 # Hacemos una referencia a nuestro nodo Camera3D
 @onready var camara = $Camera3D
+@onready var raycast = $Camera3D/RayCast3D  # <-- AÑADE ESTA LÍNEA
 
 func _ready():
 	# Cuando el juego empieza, ocultamos y capturamos el cursor del ratón
@@ -29,6 +30,14 @@ func _unhandled_input(event):
 	# Para poder salir del juego pulsando ESC
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		
+	if Input.is_action_just_pressed("disparar"):
+		# Si el láser está chocando con algo en este momento...
+		if raycast.is_colliding():
+			# Obtenemos qué es exactamente ese "algo"
+			var objetivo = raycast.get_collider()
+			# Por ahora, solo imprimimos su nombre en la consola para saber que funciona
+			print("¡PUM! Le diste a: ", objetivo.name)
 
 func _physics_process(delta):
 	# Aplicamos la gravedad si no estamos tocando el suelo

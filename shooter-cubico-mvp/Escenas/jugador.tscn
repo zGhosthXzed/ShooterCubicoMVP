@@ -12,3 +12,6 @@ script = ExtResource("1_83bx5")
 shape = SubResource("CapsuleShape3D_cbyeo")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=164513890]
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=497741820]
+target_position = Vector3(0, 0, -50)
