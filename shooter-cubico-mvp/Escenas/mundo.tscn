@@ -6,12 +6,12 @@
 [node name="Node3D" type="Node3D" unique_id=602859493]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1579738222]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13280368, 1.4363446, 0.96271133)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.088176966, 1.373117, 0.9575901)
 use_collision = true
 size = Vector3(20, 1, 20)
 
 [node name="Jugador" parent="." unique_id=1130455222 instance=ExtResource("1_wxucn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.51991224, 2.8169825, 0.08268052)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.601089, 3.1924512, -0.010192573)
 
 [node name="Blanco" parent="." unique_id=368395312 instance=ExtResource("2_5sfon")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3939924, 2.4363441, 7.257825)
