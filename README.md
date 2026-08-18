@@ -6,10 +6,12 @@ Un videojuego de disparos competitivo con mecánicas *hitscan*, diseño de nivel
 
 Aquí se muestra el progreso del diseño de niveles modular y el entorno de pruebas:
 
-![Vista de Edición del Mapa](e1.jpg)
+![Vista de Edición del Mapa](<img width="1353" height="705" alt="e1" src="https://github.com/user-attachments/assets/81169231-6ccb-4564-924e-7daa57906ea2" />
+)
 *Vista superior geométrica del mapa en el editor de Godot, mostrando la simetría y construcción mediante nodos CSG.*
 
-![Vista en el Juego](e2.PNG)
+![Vista en el Juego](<img width="1163" height="724" alt="e2" src="https://github.com/user-attachments/assets/e3152481-4229-437d-8299-fd81e635960f" />
+)
 *Vista en primera persona del entorno low-poly en ejecución, probando los blancos reactivos rojos y los contrastes de materiales.*
 
 ## 🛠️ Herramientas Utilizadas
