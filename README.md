@@ -1,4 +1,4 @@
-# 🎯 Shooter Cúbico Competitivo (MVP)
+# Shooter Cúbico Competitivo (MVP)
 
 Un videojuego de disparos competitivo con mecánicas *hitscan*, diseño de niveles simétrico y una estética *low-poly* limpia, desarrollado en **Godot 4**.
 
