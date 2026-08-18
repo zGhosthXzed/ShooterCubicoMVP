@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d2lumhun47teu" path="res://Escenas/jugador.tscn" id="1_wxucn"]
 [ext_resource type="PackedScene" uid="uid://clf40yj03ql0d" path="res://Escenas/blanco.tscn" id="2_5sfon"]
 [ext_resource type="Material" uid="uid://cs822qu6ijio2" path="res://Materiales/Material_Suelo.tres" id="3_bqhdr"]
+[ext_resource type="Script" uid="uid://c02hev8xtl718" path="res://Escenas/ciclo_solar.gd" id="5_rxj15"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcwp7"]
 albedo_color = Color(0.35906908, 0.35906908, 0.35906908, 1)
@@ -49,6 +50,15 @@ albedo_color = Color(0.40392157, 0.40392157, 0.40392157, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oeajq"]
 albedo_color = Color(0.40392157, 0.40392157, 0.40392157, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3rgfu"]
+
+[sub_resource type="Sky" id="Sky_x6etp"]
+sky_material = SubResource("ProceduralSkyMaterial_3rgfu")
+
+[sub_resource type="Environment" id="Environment_v88e1"]
+background_mode = 2
+sky = SubResource("Sky_x6etp")
 
 [node name="Mundo" type="Node3D" unique_id=602859493]
 
@@ -179,3 +189,10 @@ transform = Transform3D(0.010042548, 0, 0.9999496, 0, 1, 0, -0.9999496, 0, 0.010
 use_collision = true
 size = Vector3(1, 3.2921143, 11.988907)
 material = SubResource("StandardMaterial3D_oeajq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1902229229]
+shadow_enabled = true
+script = ExtResource("5_rxj15")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1922513226]
+environment = SubResource("Environment_v88e1")
